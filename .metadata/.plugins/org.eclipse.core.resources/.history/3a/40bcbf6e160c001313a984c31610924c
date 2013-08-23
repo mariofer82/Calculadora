@@ -1,0 +1,28 @@
+package com.example.aplicacion1;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.view.View;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+
+	String x="";
+	int flagpu=0;
+	public int flagpas=0;
+	double Total=0,x1,y1;
+	int flagl=0;
+	int ope=0;
+		public String im(String a){
+		float p=Float.parseFloat(a);
+		p*=-1;
+		p=(float) Math.sqrt(p);
+		a=p+"i";		
+		return a;
+		}
+	public void procesa(String a){
+	Total=Double.parseDouble(a);
+	x="";
+	}
+}

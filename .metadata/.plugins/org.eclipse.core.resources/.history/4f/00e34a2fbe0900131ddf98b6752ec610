@@ -1,0 +1,47 @@
+package com.usb.aplicacion1;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+public class MainActivity extends Activity implements OnClickListener{
+
+    
+    // \\202EQUIPO20\Users\202\workspace
+    //los activuty ventanas
+    // onCreate es el main
+    // views controles http://developer.android.com/reference/packages.html
+   // button
+    //EditTexto
+    TextView tv2;
+    EditText t1, t2;
+    protected void onCreate(Bundle savedInstanceState)  {
+        super.onCreate(savedInstanceState);
+        
+        setContentView(R.layout.activity_main);
+        tv2 = (TextView) this.findViewById(R.id.aviso);
+        tv2.setText("cambio el texto");
+        
+        t1 = (EditText) this.findViewById(R.id.numero1);
+        t2 = (EditText) this.findViewById(R.id.numero2);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.activity_main, menu);
+        return true;
+    }
+
+	public void metodo(View v) {
+		// TODO Auto-generated method stub
+		tv2.setText("cambio el texto");
+	}
+    
+}
